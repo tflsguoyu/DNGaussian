@@ -101,7 +101,7 @@ for dataset_id in scenes:
             # name = 'depth_'+filename.split('/')[-1]
             # print('######### output_path and name:', output_path,  name)
             # output_file_name = os.path.join(output_path, name.split('.')[0])
-            output_file_name = filename.replace.replace("\\", "/").replace("images", "depths").replace(".png", "")
+            output_file_name = filename.replace("\\", "/").replace("images", "depths").replace(".png", "")
             print(output_file_name)
             # utils.io.write_depth(output_file_name.split('.')[0], output, bits=2)
             utils_io.write_depth(output_file_name, output, bits=2)
