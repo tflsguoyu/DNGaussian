@@ -1,0 +1,7 @@
+setup.py
+C:/Users/guoyu/gyDocuments/cvpr25/DNGaussian/submodules/shencoder/src/bindings.cpp
+C:/Users/guoyu/gyDocuments/cvpr25/DNGaussian/submodules/shencoder/src/shencoder.cu
+shencoder.egg-info/PKG-INFO
+shencoder.egg-info/SOURCES.txt
+shencoder.egg-info/dependency_links.txt
+shencoder.egg-info/top_level.txt

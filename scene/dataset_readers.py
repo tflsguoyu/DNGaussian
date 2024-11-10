@@ -123,7 +123,8 @@ def readColmapCameras(cam_extrinsics, cam_intrinsics, images_folder):
 
         # monocular depth
         ## (fix path)
-        depth_mono_path = os.path.join('/'.join(images_folder.split("/")[:-1]), 'depth_maps', 'depth_' + os.path.basename(extr.name).split(".")[0] + '.png')
+        # depth_mono_path = os.path.join('/'.join(images_folder.split("/")[:-1]), 'depth_maps', 'depth_' + os.path.basename(extr.name).split(".")[0] + '.png')
+        depth_mono_path = image_path.replace("images", "depths")
         depth_mono = Image.open(depth_mono_path)
 
         cam_info = CameraInfo(uid=image_path, R=R, T=T, FovY=FovY, FovX=FovX, image=image, depth_mono=depth_mono,
