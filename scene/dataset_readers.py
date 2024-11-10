@@ -246,7 +246,7 @@ def readColmapSceneInfo(path, images, dataset, eval, rand_pcd, mvs_pcd, llffhold
         pcd = BasicPointCloud(points=xyz, colors=SH2RGB(shs), normals=np.zeros((num_pts, 3)))
         storePly(ply_path, xyz, SH2RGB(shs) * 255)
     elif mvs_pcd:
-        ply_path = os.path.join(path, "3_views/dense/fused.ply")
+        ply_path = os.path.join(path, "fused.ply")
         assert os.path.exists(ply_path)
         pcd = fetchPly(ply_path)
     else:
